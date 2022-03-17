@@ -1,0 +1,95 @@
+--------------------------------------------------
+		Introduction
+--------------------------------------------------
+
+tree - who listing all file in your folder
+vim menu.txt - who editing file 
+wq - exit editing file
+ls -a - listing all files in your folder
+ls .git/ -listing specification file
+git status - information to git status code
+
+--------------------------------------------------
+		Basic Workflow
+--------------------------------------------------
+
+git diff - diferent git use different style
+git diff --cached - different cached to clean 
+cat menu.txt - git copy file on modified and file is red
+git add menu.txt - git copy file on modified and file is green
+git commit -m "Add Tikka Masala to menu" - git commit
+git branch - check branch
+git diff lisa master - switch branches
+git checkout lisa - check switch branch
+
+--------------------------------------------------
+		Git Reset
+--------------------------------------------------
+
+git rm COPYRIGHT - remove file to git
+git rm --chached COPYRIGHT - remove file and clean cache memory
+mv menu.txt menu.md - rename file in your branch
+git log - view log on git
+git reset fbe5356 - replace to previous commit on branch
+git reset --hard fbe5356 - hard reset 
+git reset --soft fbe5356 - soft reset
+
+--------------------------------------------------
+		Advanced Tools
+--------------------------------------------------
+
+touch recipes/guacamole.txt - create new file on your project
+git stash - create stash and use method untrack and ignores untrackted files
+git stash apply - use to stash files back to previos 
+git stash clear - clearn stash folder to other files
+git stash list - looking git stash folder and watch stash file
+git merge tomato - marge tomato file to master branch
+cat recipes/guacamole.txt - looking what is file there is
+ls .git - looking merge head an merge mode file and status
+git show bf097a - showing author and date create or modified branch
+vim recipes/guacamol.txt - editing or removing confilct to file
+git reset HEAD menu.txt - reset one specific file on your folder
+git checkout HEAD menu.txt - copy to another specific file 
+git diff - looking what change in your file
+git add --patch menu.txt - after that command there jumped out hunk and you choose next commands which are offered
+This command commit step-by-step file on your folder
+Commands with a "patch" Option - add, checkout, stash, reset
+Two Experimental Commands - switch, restore
+
+--------------------------------------------------
+		Exploring the Past
+--------------------------------------------------
+
+git log --graph --decorate --oneline - better looking history in branch
+git show 7160d61 - showing more details on branch o git show nogood
+git show HEAD^ - parent commit of HEAD
+git show HEAD^^ - go to the parent of the parent of HEAD
+git show HEAD~2 - red this as go to HEAD, and then go back two commits
+git show HEAD~2^2 - it's the second parent of the second commit before HEAD
+git show HEAD@{"1 month ago"} - looking commit in 1 month ago
+git blame recipes/ - shows you where the lines in a file are coming from
+git diff HEAD HEAD~2
+git diff nogood master
+git help log
+git patch
+git log --grep apples -oneline
+git help grep
+git log -3 --online
+git log HEAD~5..HEAD^ --online
+git log nogood..master --online
+
+--------------------------------------------------
+		Fixing Mistakes
+--------------------------------------------------
+
+git commit
+git commit --amend
+git blame menu.txt
+git log --graph --oneline --decorate
+git rebase --interactive or git rebase -i origin/master
+git reflog HEAD - looking all log to HEAD
+git show HEAD@{15} - looking HEAD 15 commit
+git filter-branch
+git revert 5720fdf
+
+
